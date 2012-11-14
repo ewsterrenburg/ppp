@@ -4989,11 +4989,3 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
   margin-bottom: 25px;
   margin-top: -25px;
 }
-
-.navbar li {
-  font-family: "Lemons Can Fly";
-  font-size: 60px;
-  line-height: 60px;
-  margin-bottom: 25px;
-  margin-top: -25px;
-}
