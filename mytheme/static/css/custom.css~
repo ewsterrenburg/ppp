@@ -1,0 +1,170 @@
+
+/* Hyphenation and text alignment */
+
+.hyphenate {
+    text-align: justify;
+}
+
+h2,h3,h4,h5,h6 {
+    text-align: left;
+}
+
+/* Typography tweaks */
+
+h6 {
+    font-family: "open-sans",sans-serif;
+}
+
+/* Use the best possible ampersand */
+
+span.amp {
+        font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 1.2em;
+            }
+
+/* Max width for images */
+
+.middle, .span6 img {
+    max-width: 100%;
+}
+
+/* About page styling */
+
+#bio {
+    display: none;
+    position: relative;
+    margin: 0 1em;
+    padding: 2em;
+    }
+
+#inner-bio h2 {
+     font-family: "ronnia-1","ronnia-2",sans-serif;
+}
+
+#inner-bio { 
+        overflow: hidden; 
+        background: #fff; 
+        padding: 40px; 
+        -webkit-border-radius: 10px;
+        -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.08);
+        -moz-box-shadow: 3px 3px 4px rgba(0,0,0,.08);
+ }
+#inner-bio img { 
+         width: 125px; 
+         float: left; 
+         position: relative; 
+         overflow: hidden; 
+         border: 10px solid #e2e1d4; 
+         background: #e2e1d4; 
+         border-radius: 8px;
+         -webkit-border-radius: 8px; 
+         -moz-border-radius: 8px; 
+         box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+         -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+         -moz-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+ }
+
+#bio img#map-img {
+    width: 100%;
+    border: .1em solid #fff;
+    }
+#bio #marker {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    }
+
+
+/* Book display */
+
+ol.specials {
+    margin: 1em 0 0 0;
+    }
+ol.specials li {
+    width: 31%;
+    float: left;
+    font-size: 1.1em;
+    margin: 0 3.5% 1.5em 0;
+    }
+ol.specials li.third {
+    margin-right: 0;
+    }
+ol.specials li div.special {
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #e2e1d4;
+    background: #e2e1d4;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    }
+ol.specials li div.special a span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-family: "skolar-1","skolar-2",Georgia,serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.3em;
+    color: #ccc;
+    background-color: #333;
+    }
+ol.specials li div.special a span strong {
+    display: block;
+    padding: 10px 10px 0 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: #fff;
+    }
+ol.specials li div.special a span em {
+    display: block;
+    padding: 0 10px 10px 10px;
+    font-style: normal;
+    color: #e3c887;
+    }
+ol.specials li div.special-img img {
+    max-width: 100%;
+}
+
+/* Press quotes */
+
+ul.press li {
+    margin: 1em 0;
+    padding: 0 0 1em 0;
+    border-bottom: 1px solid #e2e1d4;
+    }
+ul.press li.last {
+    padding-bottom: 0;
+    border-bottom: none;
+    }
+ul.press li blockquote {
+    font-family: "skolar-1","skolar-2", Georgia, sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height 1.5em;
+    }
+ul.press li blockquote a {
+     font-style: normal;
+}
+
+ul.press li blockquote p {
+    margin: 0 0 1em 0;
+    }
+ul.press li blockquote p.author {
+    margin: 0;
+    font-family: "ronnia-1","ronnia-2", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+    font-size: .8em;
+    font-style: normal;
+    text-align: right;
+    color: #9c836e;
+    }
+ul.press li blockquote p.author a {
+    font-weight: bold;
+    }

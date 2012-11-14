@@ -1,0 +1,412 @@
+/* Custom LESS file for rosslaird.com
+   Created by Ross Laird.
+   version 1.0
+   Feel free to copy and adapt these styles.  */
+/* Note:
+   When used with the Twitter Bootstrap
+   framework, this file should be loaded after
+   bootstrap.less.                            */
+/* Styles follow below.
+_______________________________________________*/
+/* Variables */
+/* Mixins */
+.shadowed {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* Links: fade effect with no underlining      */
+a:link, a:visited {
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  text-decoration: none;
+}
+/* Main header styling (for bootstrap framework) */
+h1 {
+  color: #666666;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.middle h2, h3 {
+  color: #666666;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* Un-styled lists: no bullets!  */
+.unstyled ul li {
+  list-style-type: none;
+}
+/* Middle column serif font */
+.middle p {
+  font-family: "chaparral-pro-1", "chaparral-pro-2", Georgia, "Times New Roman", Times, serif;
+}
+/* Style the book names on the home page */
+.promo p {
+  font-size: 18px;
+  color: #565C61;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.promo img {
+  float: left;
+  margin-right: 10px;
+  box-shadow: none;
+}
+/* Clear after the final book image  */
+.promo:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Book displays on the home page */
+ol.books {
+  margin: 1em 0 0 0;
+  list-style-type: none;
+}
+ol.books li {
+  width: 31%;
+  float: left;
+  font-size: 1.1em;
+  margin: 0 3.5% 1.5em 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+ol.books li:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+ol.books li.third {
+  margin-right: 0;
+}
+ol.books li div.book {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #EEE;
+  -webkit-border-radius: 10px 10px;
+  -moz-border-radius: 10px 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+ol.books li div.book a span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-family: "chaparral-pro-1", "chaparral-pro-2", Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.3em;
+  color: #ccc;
+  background-color: #2A2A2A;
+  opacity: .7;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+ol.books li div.book a span strong {
+  display: block;
+  padding: 5px 5px 10px 5px;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #e3c887;
+}
+ol.books li div.book a span em {
+  display: block;
+  padding: 0 10px 10px 10px;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .75em;
+  font-style: normal;
+  text-align: left;
+  color: #fff;
+}
+ol.books li div.book-img img {
+  max-width: 100%;
+  background-position: 50% 50%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.cover img {
+  float: left;
+  position: relative;
+  margin: 15px;
+  overflow: hidden;
+  border: 10px solid #e2e1d4;
+  background: #e2e1d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* self-clear floats for book images */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Style the Recent entries on the home page */
+.recent-summary {
+  margin-bottom: 2em;
+}
+.recent-summary hr {
+  margin: 24px 12px;
+  border: 0;
+  border-top: 0;
+  border-bottom: 1px solid #F6E4E2;
+}
+.recent-summary p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.recent-summary a {
+  float: right;
+  margin-bottom: 0;
+  margin-right: 12px;
+}
+/* Help acronyms stand out */
+acronym {
+  cursor: help;
+  border: 0;
+  background: #dcebe2;
+}
+/* I have no idea what this is for... */
+.cat li em {
+  font-style: normal;
+  text-align: right;
+  float: right;
+}
+/* Use the best possible ampersand */
+span.amp {
+  font-family: "Baskerville", "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2em;
+}
+/* Style the header links  */
+.navbar a.brand {
+  color: #56C4E2;
+  font-weight: bold;
+}
+.navbar a {
+  font-weight: bold;
+}
+/* Max width for images */
+.middle, .span6 img {
+  max-width: 100%;
+}
+/* Style the breadcrumb menu (bootstrap)  */
+.breadcrumb {
+  background-color: rgba(246, 240, 216, 0.8);
+  padding: 7px 14px;
+  margin: 0 0 18px;
+  list-style: none;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 #E0D6BF;
+  -moz-box-shadow: inset 0 1px 0 #ffffff;
+  box-shadow: inset 0 1px 0 #E0D6BF;
+}
+/* Image on the about page */
+.ross img {
+  width: 30%;
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  overflow: hidden;
+  border: 8px solid #e2e1d4;
+  background: #e2e1d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Float arbitrary images to the left */
+.left img {
+  width: 30%;
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  overflow: hidden;
+  border: 8px solid #e2e1d4;
+  background: #e2e1d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Press quotes */
+ul.press {
+  margin: 0;
+}
+ul.press li {
+  border-bottom: 1px solid #e2e1d4;
+  list-style: none;
+}
+ul.press li.last {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+ul.press li blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.5em;
+  border: 0;
+}
+ul.press li blockquote a {
+  font-style: normal;
+}
+ul.press li blockquote p {
+  margin-top: 10px;
+  padding: 0;
+  font-family: "chaparral-pro-1", "chaparral-pro-2", Georgia, "Times New Roman", Times, serif;
+}
+ul.press li blockquote p.author {
+  margin-bottom: 10px;
+  font-size: .8em;
+  font-style: normal;
+  text-align: right;
+  color: #9c836e;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul.press li blockquote p.author a {
+  font-weight: bold;
+}
+/* Definition lists for about/consulting */
+.floated dl {
+  padding: 0.5em;
+  font-size: .875em;
+}
+.floated em {
+  font-style: italic;
+}
+dt {
+  float: left;
+  clear: left;
+  width: 100px;
+  font-size: .875em;
+  text-align: right;
+  font-weight: bolder;
+}
+dt:after {
+  content: ":";
+}
+dd {
+  margin: 0 0 0 110px;
+  padding: 0 0 0.5em 0;
+  font-size: .875em;
+}
+/* Style the logo */
+.ibis img {
+  box-shadow: none;
+  float: none;
+  background: none;
+  border: none;
+}
+/* Nudge user panel on home page */
+.nudge {
+  margin-top: 49px;
+}
+/* Footer */
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+.foot {
+  color: #E3D8C2;
+  margin-left: 20px;
+  margin-right: 15px;
+  text-align: justify;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.span6 h3 {
+  margin-left: 20px;
+}
+.span2 h3 {
+  padding-left: 10px;
+}
+.span2 li {
+  padding-left: 10px;
+}
+.footnudge li {
+  margin-left: 0;
+  padding-right: 10px;
+}
+.footer {
+  background: #262626;
+  border: 1px solid #EEE;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 10px;
+}
+.footer h3 {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-left: 0;
+  padding-right: 10px;
+}
+/* Ribbon (on footer)  */
+#ribbon {
+  float: left;
+  box-shadow: none;
+  background: none;
+  border: none;
+  margin-top: -5px;
+  margin-right: 5px;
+  margin-left: 6px;
+}
+/* Class for arbitrary float clearing */
+.clearfix {
+  clear: both;
+}
+/* Search Results page */
+#search-results h5 {
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+#search-results h5 a {
+  padding-left: .25em;
+}
+/* Category styling for blog listing page */
+.category-list {
+  background: #d2c8b4;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.category-list:hover {
+  background: rgba(20, 120, 200, 0.15);
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+}
+/* Highlighting of sub-menus */
+.tree-menu-level-0 .active {
+  font-weight: bold;
+  background: #d2c8b4;
+  padding-left: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+/* End */
