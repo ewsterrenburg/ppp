@@ -20,13 +20,14 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}ico/apple-touch-icon-57-precomposed.png">
 
-{% compress css %}
+
 
 <!--
 <link rel="stylesheet" href="{{ STATIC_URL }}css/mezzanine.css">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.responsive.css">
 -->
+{% compress css %}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/puppit.css">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.responsive.css">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/mezzanine.css">
@@ -145,7 +146,6 @@ $(function() {
     
 
     {% ifinstalled mezzanine.twitter %}
-<!--
     {% include "twitter/tweets.html" %}
 
     {% endifinstalled %}
