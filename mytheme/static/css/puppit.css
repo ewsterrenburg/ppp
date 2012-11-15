@@ -573,6 +573,7 @@ textarea {
 .container {
   margin-right: auto;
   margin-left: auto;
+  margin-top:-15px;
   *zoom: 1;
 }
 .container:before,
@@ -1899,7 +1900,7 @@ table .span24 {
   display: inline-block;
   width: 0;
   height: 0;
-  vertical-align: top;
+  vertical-align: bottom;
   border-top: 4px solid #360000;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
@@ -2987,16 +2988,6 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand:hover {
   text-decoration: none;
 }
-.navbar .brand {
-  float: left;
-  display: block;
-  padding: 18px 20px 22px;
-  margin-left: -20px;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 1;
-  color: #FF9C00;
-}
 .navbar .navbar-text {
   margin-bottom: 0;
   line-height: 60px;
@@ -3140,13 +3131,18 @@ input[type="submit"].btn.btn-mini {
   float: right;
 }
 .navbar .nav > li {
+  margin-bottom: 25px;
+  margin-top: -25px;
   display: block;
   float: left;
 }
+
 .navbar .nav > li > a {
+  font-family: "Lemons Can Fly";
+  font-size: 60px;
+  line-height: 60px;
   float: none;
   padding: 19px 10px 21px;
-  line-height: 19px;
   color: #FF9C00;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -3164,8 +3160,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .divider-vertical {
   height: 60px;
-  width: 1px;
-  margin: 0 9px;
+  width: 0px;
+  margin: 0 0px;
   overflow: hidden;
   background-color: transparent;
 /*
@@ -3296,7 +3292,7 @@ input[type="submit"].btn.btn-mini {
   left: auto;
   right: 13px;
 }
-.breadcrumb {
+.2breadcrumb {
   padding: 7px 14px;
   margin: 0 0 18px;
   list-style: none;
@@ -4195,16 +4191,19 @@ a:hover {
   margin-top: 0px !important;
 }
 .navbar .brand {
+  float: left;
+  display: block;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #FF9C00;
   background: transparent url('../img/logo50.png?bf1a4c5bd8df') no-repeat;
   text-indent: -10000px;
   width: 199px;
   height: 50px;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: -5px;
   padding: 0;
-}
-.navbar .nav > li > a {
-  font-size: 16px;
 }
 .breadcrumb li {
   text-shadow: none;
@@ -4273,7 +4272,7 @@ footer {
   -webkit-box-shadow: inset 0 1px 0 #21201f;
   -moz-box-shadow: inset 0 1px 0 #21201f;
   box-shadow: inset 0 1px 0 #21201f;
-  margin: 0;
+  margin: 15px 0;
   -moz-border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px 0px 3px 3px;
   border-radius: 0px 0px 3px 3px;
@@ -4989,3 +4988,4 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
   margin-bottom: 25px;
   margin-top: -25px;
 }
+

@@ -7,7 +7,11 @@ h6 a {color:#666;}
 .middle h6 {line-height:100%; margin:10px 0 15px 0;}
 .right h6 {margin-top:10px;}
 .panel {background:rgba(255,255,200, 0.3); padding:10px 20px; margin-bottom:20px;
-        line-height:170%; border:1px solid #eee; border-radius:5px;}
+        line-height:170%; border:1px solid #eee; 
+/*
+        border-radius:5px;
+*/
+        }
 p, ul {line-height:22px; margin-top:5px; margin-bottom:15px;}
 li {line-height:20px;}
 img {box-shadow:0 0 10px #bbb;}
@@ -18,7 +22,7 @@ img {box-shadow:0 0 10px #bbb;}
 .navbar {z-index:500;}
 .navbar-search {margin-left:10px;}
 .tagline {float:left; font-size:12px; font-style:italic; margin:9px 5px 0 -4px; color:#FFFFDD; opacity:.5;}
-.breadcrumb {margin:20px 0 25px 0;}
+.breadcrumb {margin:0 0 25px 0;}
 .breadcrumb .divider {margin:0 5px;}
 .breadcrumb strong {color:#360000;}
 ul.nav li.dropdown:hover ul.dropdown-menu {display:block;}
@@ -114,4 +118,5 @@ a.btn-large, input.btn-large {width:auto; min-width:100px; margin-right:10px;}
 .image-overlay-prev {left:30px;}
 .image-overlay-next {right:30px;}
 .image-overlay-full {border-radius:5px; max-width:none !important; box-shadow:0 0 30px #222;}
+
 
