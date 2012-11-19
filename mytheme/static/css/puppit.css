@@ -4988,4 +4988,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
   margin-bottom: 25px;
   margin-top: -25px;
 }
-
+.span7 img.img_left {
+ float: left;
+ margin: 12px;
+}
