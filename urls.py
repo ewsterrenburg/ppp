@@ -14,7 +14,7 @@ admin.autodiscover()
 urlpatterns = patterns("",
     ("^admin/", include(admin.site.urls)),
     ("^shop/", include("cartridge.shop.urls")),
-    (r'^googlea14532fb912s486\.html$', lambda r: HttpResponse("google-site-verification: google95222134516fff86.html", mimetype="text/plain")),
+    (r'^google95222134516fff86\.html$', lambda r: HttpResponse("google-site-verification: google95222134516fff86.html", mimetype="text/plain")),
 
     url("^account/orders/$", "cartridge.shop.views.order_history",
         name="shop_order_history"),
